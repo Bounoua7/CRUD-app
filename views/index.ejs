@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="/style.css" type="text/css" />
+<link rel="stylesheet" href="/bootstrap.min.css" />
+
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="/home">MyKitchen</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarColor01">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="/home">Home
+              <span class="visually-hidden">(current)</span>
+            </a>
+          </li>
+      
+          <li class="nav-item">
+            <a class="nav-link" href="/recettes" target="_blank">Recettes</a>
+          </li>
+          
+
+        <li class="nav-item">
+            <a class="nav-link"  href="#up-id">Contact Us</a>
+          </li>
+
+          <li class="nav-item">
+           <a class="nav-link" href="/about">About</a>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown"  role="button" aria-haspopup="true" aria-expanded="false">Categories</a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="boissons">Boissons</a>
+              <a class="dropdown-item" href="desserts">Desserts</a>
+              <a class="dropdown-item" href="plats">Plats</a>
+              <a class="dropdown-item" href="aperitif">Apéritif</a>
+              <a class="dropdown-item" href="bases">Bases</a>
+              <div class="dropdown-divider"></div>
+            </div>
+          </li>
+
+          
+        </ul>
+        
+        <span> <a> <img src="/cooking.png" width="50" height="50"></a></span>  
+
+
+        <select id="menu-select">
+          <option >Categories</option>
+          <option href="boissons">Boissons</option>
+          <option href="desserts">Desserts</option>
+          <option href="/home">Plats</option>
+          <option href="aperitif">Apéritif</option>
+          <option href="bases">Bases</option>
+
+        </select>
+  </nav>
+
+
+</head>
+
+
+
+<h2>Déposer une recette</h2>
+
+<div class="container">
+
+<body>
+    
+
+
+
+
+<div>
+<form action="/addRecette" method="post">
+    <label>Recette</label>
+    <input type="text" name="nom" placeholder="Saisir le nom de la recette..">
+
+    <label>Ingrédients</label>
+    <input type="text" name="nom" placeholder="Saisir les ingrédients..">
+
+
+    <label for="lname" >Description</label>
+        <input type="text" name="description" href="description" placeholder="Décrivez la recette.. ">
+
+    <label>Catégorie</label>
+     <select name="categorie">
+     <option value="apéritif">Apéritif</option>
+     <option value="boissons">Boisson</option>
+     <option value="bases">Bases</option>
+     <option value="desserts">Desserts</option>
+     <option value="plats">Plats</option>
+     <option value="plats">Salades</option>
+
+    </select>
+<input type="submit" value="Ajouter recette" href="/recette">
+</form>
+</div>
+</body>
+</div>
+<br/>
+<br/>
+<br/>
+<footer>
+    <div class="cont">
+      <div class="row">
+        <div class="col-md-4">
+          <h3>About</h3>
+          <p>Learn more about our website and the team behind it.</p>
+          <p><a href="/about" target="_blank" style="color: rgb(105, 75, 75)" >Learn More</a></p>
+        </div>
+        <div class="col-md-4">
+          <h3 id="#cnt">Contact</h3>
+          <ul>
+            <li>Email: <a href="mailto:info@kitchenwebsite.com" style="color: rgb(105, 75, 75)" >info@MyKitchen.com</a></li>
+            <li>Phone: 123-123-1234</li>
+            <li>Address: 123 Fes, Morocco</li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <h3>Follow Us</h3>
+          <ul class="social-icons">
+          <span> <a href="#" id="up-id"> <img src="/instagram.png" width="40" height="40"></a></span>  
+            <a href="#" id="up-id"><img src="/pinterest.png" width="40" height="40"></a>
+            <a href="#" id="up-id"><img src="/facebook.png" width="40" height="40"></a>
+            <a href="#" id="up-id"><img src="/tiktok.png" width="40" height="40"></a>
+          </ul>
+        </div>
+      </div>
+    </div>
+<div class="cont">
+    <div class="copyright">
+     
+        <div class="row">
+          <div class="col-md-12">
+            <p style="text-align: center; ">Copyright &copy; 2023 MyKitchen</p>
+          </div>
+        
+      </div>
+
+    </div>
+</div>
+    
+  </footer>
+
+
+  
+</html>

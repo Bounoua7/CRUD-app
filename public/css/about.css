@@ -1,0 +1,26 @@
+body {
+    font-family: "Lucida Console", "Courier New", monospace; /* choose a font-family */
+    background-image: url('/cuisine.png');
+    background-repeat: no-repeat;
+    background-size: cover; 
+
+    /* background-color: #f1f1f1; choose a background color  center center no-repeat*/
+    text-align: center; /* center align the text in the body */
+  }
+  
+  h1 {
+    text-align: center;
+    text-decoration: solid;
+    text-shadow: #4CAF50;
+    color: #176119; /* choose a color for the heading */
+    margin-top: 50px; /* add a top margin for the heading */
+  }
+  
+  p {
+    font-size: 1.2em; /* choose a font-size for the paragraph text */
+    line-height: 1.5em; /* choose a line-height for the paragraph text */
+    margin-top: 0 auto; /* add a top and bottom margin for the paragraphs */
+    text-align: center;
+    background-color: rgb(247, 231, 238);
+  }
+  

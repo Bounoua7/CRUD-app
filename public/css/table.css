@@ -1,0 +1,47 @@
+body{
+  background-image: url('/bois.jpg');
+  background-repeat: no-repeat;
+  background-size: cover; 
+}
+
+table#recette {
+    width: 80%;
+    border-collapse: collapse;
+    align-items: center;
+    margin: 0 auto;
+  }
+  
+  table#recette th {
+    background-color: #c57c7c;
+    font-weight: bold;
+    padding: 12px;
+    text-align: left;
+  }
+  
+  table#recette td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+  }
+  
+  table#recette tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  table#recette tr:hover {
+    background-color: #f5f5f5;
+  }
+  
+  table#recette th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #c5a206;
+    color: white;
+  }
+  
+  h3 {
+    text-align: center;
+    margin-top: 50px;
+  }
+  

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="/table.css" type="text/css" />
+<link rel="stylesheet" href="/bootstrap.min.css" />
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="/home">MyKitchen</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarColor01">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="/home">Home
+              <span class="visually-hidden">(current)</span>
+            </a>
+          </li>
+      
+          <li class="nav-item">
+            <a class="nav-link" href="/recettes" >Recettes</a>
+          </li>
+          
+
+        <li class="nav-item">
+            <a class="nav-link"  id="#cnt">Contact Us</a>
+          </li>
+
+          <li class="nav-item">
+           <a class="nav-link" href="/about" >About</a>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Categories</a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="boissons">Boissons</a>
+              <a class="dropdown-item" href="desserts">Desserts</a>
+              <a class="dropdown-item" href="plats">Plats</a>
+              <a class="dropdown-item" href="aperitif">Apéritif</a>
+              <a class="dropdown-item" href="bases">Bases</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Separated link</a>
+            </div>
+          </li>
+        </ul>
+        <div class="navbar navbar-inverse navbar-fixed-top opaque-navbar">
+            <div class="container">
+              <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#myNav">
+          <span class="sr-only">Themes</span> Menu <i class="fa fa-bars"></i>
+                </button> </div>
+      </div>
+    </div>
+  </nav>
+
+
+</head>
+
+
+
+<body>
+<br/>
+<br/>
+
+<h3 style="color: aliceblue;">Table des recettes</h3>
+<br/>
+
+
+<table id="recette">
+    <tr>
+    <th>Nom de recette</th>
+    <th>Ingrédients</th>
+    <th>Description</th>
+    <th>Catégorie</th>
+    <th colspan="2">actions</th>
+    </tr>
+    <tr>
+    <td>Tajine viande hachée</td>
+    <td>500g de viande hachée
+        2 oignons, hachés finement.
+        3 gousses d'ail, hachées finement.
+        2 tomates, coupées en dés.
+        2 cuillères à soupe d'huile d'olive.
+        1 cuillère à café de cumin en poudre.
+        1 cuillère à café de paprika.
+        Sel et poivre, au goût.
+        4 œufs.
+        Persil frais, haché (facultatif) </td>
+    <td>Dans une poêle à feu moyen, faites chauffer l'huile d'olive et ajoutez les oignons et l'ail. Faites-les revenir jusqu'à ce qu'ils soient tendres et translucides.
+        Ajoutez la viande hachée à la poêle et faites-la cuire jusqu'à ce qu'elle soit bien dorée.
+        Ajoutez les tomates, le cumin, le paprika, le sel et le poivre, et mélangez bien. Laissez mijoter pendant quelques minutes pour que les saveurs se mélangent.
+        Casser les œufs sur le dessus de la préparation et recouvrez le tout avec un couvercle. Laisser cuire jusqu'à ce que les œufs soient cuits.
+        Servir le tajine chaud, parsemé de persil frais haché si désiré.</td>
+    <td>plats</td>
+    <td><a href="/recette/:id"><img src="/edit.png" width="24" height="24"> </a></td>
+    <td><a href="/recette/:id"></a><img src="/delete.png" width="24" height="24"></td>
+
+    </tr>
+</table>
+
+</body>
+
+
+
+
+</html> 
