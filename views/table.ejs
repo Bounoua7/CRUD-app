@@ -31,18 +31,7 @@
            <a class="nav-link" href="/about" >About</a>
           </li>
 
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Categories</a>
-            <div class="dropdown-menu">
-              <a class="dropdown-item" href="boissons">Boissons</a>
-              <a class="dropdown-item" href="desserts">Desserts</a>
-              <a class="dropdown-item" href="plats">Plats</a>
-              <a class="dropdown-item" href="aperitif">Apéritif</a>
-              <a class="dropdown-item" href="bases">Bases</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">Separated link</a>
-            </div>
-          </li>
+         
         </ul>
         <div class="navbar navbar-inverse navbar-fixed-top opaque-navbar">
             <div class="container">
@@ -67,7 +56,7 @@
 <br/>
 
 
-<table id="recette">
+<table id="recettes">
     <tr>
     <th>Nom de recette</th>
     <th>Ingrédients</th>
@@ -93,15 +82,24 @@
         Casser les œufs sur le dessus de la préparation et recouvrez le tout avec un couvercle. Laisser cuire jusqu'à ce que les œufs soient cuits.
         Servir le tajine chaud, parsemé de persil frais haché si désiré.</td>
     <td>plats</td>
-    <td><a href="/recette/:id"><img src="/edit.png" width="24" height="24"> </a></td>
-    <td><a href="/recette/:id"></a><img src="/delete.png" width="24" height="24"></td>
-
+    <td><a href="/editrecette/"><img src="/edit.png" width="50" height="50"> </a></td>
+    <td><a href="/deleterecette/"><img src="/delete.png" width="50" height="50"></a></td>
     </tr>
+
+    <tr>
+      <% Recipe.forEach((item)=>
+      { %>
+      <td><%=item.nom %></td>
+      <td><%=item.ingredients %></td>
+      <td><%=item.description %></td>
+      <td><%=item.categorie %></td>
+
+      <td><a href="/editrecette/<%=item.id %>"><img src="/edit.png" width="50" height="50"> </a></td>
+      <td><a href="/deleterecette/<%=item.id %>"><img src="/delete.png" width="50" height="50"></a></td>
+      </tr>
+      <% }) %>
 </table>
 
 </body>
-
-
-
 
 </html> 

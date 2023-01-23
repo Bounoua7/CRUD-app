@@ -32,17 +32,7 @@
            <a class="nav-link" href="/about">About</a>
           </li>
 
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown"  role="button" aria-haspopup="true" aria-expanded="false">Categories</a>
-            <div class="dropdown-menu">
-              <a class="dropdown-item" href="boissons">Boissons</a>
-              <a class="dropdown-item" href="desserts">Desserts</a>
-              <a class="dropdown-item" href="plats">Plats</a>
-              <a class="dropdown-item" href="aperitif">Apéritif</a>
-              <a class="dropdown-item" href="bases">Bases</a>
-              <div class="dropdown-divider"></div>
-            </div>
-          </li>
+         
 
           
         </ul>
@@ -71,25 +61,21 @@
 <div class="container">
 
 <body>
-    
-
-
-
 
 <div>
-<form action="/addRecette" method="post">
+<form action="/recettes" method="post">
     <label>Recette</label>
-    <input type="text" name="nom" placeholder="Saisir le nom de la recette..">
+    <input type="text" id="nom" name="nom" placeholder="Saisir le nom de la recette.." required="true">
 
     <label>Ingrédients</label>
-    <input type="text" name="nom" placeholder="Saisir les ingrédients..">
+    <input type="text" id="ingredients" name="ingredients" placeholder="Saisir les ingrédients.." required="true">
 
 
     <label for="lname" >Description</label>
-        <input type="text" name="description" href="description" placeholder="Décrivez la recette.. ">
+        <input type="text" id="ingredients" name="description" placeholder="Décrivez la recette.. " required="true">
 
     <label>Catégorie</label>
-     <select name="categorie">
+     <select name="categorie" id="categorie" required="true">
      <option value="apéritif">Apéritif</option>
      <option value="boissons">Boisson</option>
      <option value="bases">Bases</option>
@@ -98,7 +84,7 @@
      <option value="plats">Salades</option>
 
     </select>
-<input type="submit" value="Ajouter recette" href="/recette">
+<input type="submit" value="Ajouter recette" >
 </form>
 </div>
 </body>

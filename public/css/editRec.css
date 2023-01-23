@@ -1,0 +1,62 @@
+body {
+ 
+        background-image: url('/bois.jpg');
+        background-repeat: no-repeat;
+        background-size: cover; 
+      
+  }
+  
+  h3 {
+    text-align: center;
+    margin-top: 50px;
+    color:white;
+    background: #000;
+  }
+  form {
+    width: 60%;
+    margin: 0 auto;
+    position: center;
+  }
+  
+  label {
+    font-weight: bold ;
+    color: white;
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  input[type="text"], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  
+  input[type="submit"] {
+    width: 100%;
+    background-color: #c5a206;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #56cc9d;
+  }
+  
+  .container {
+    width: 50%;
+    margin: 0 auto;
+  }
+  
+  p {
+    text-align: center;
+    font-size: 1.5em;
+    margin-top: 50px;
+  }
+
+ 

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  
+  <link rel="stylesheet" href="/editRec.css" type="text/css" />
+  <link rel="stylesheet" href="/bootstrap.min.css" />
+ 
+
+
+</head>
+<body>
+  <h3>Modification de La recette</h3>
+	
+  
+    <form action="/update/<%=recette.id %>" method="post">
+     
+        <label>Nom de le recette</label>
+        <input type="text" id="nom" name="nom" value="<%=recette.nom%>"   placeholder="Saisir le nom de la recette.." required="true">
+    
+        <label>Ingrédients</label>
+        <input type="text" id="ingredients" name="ingredients"  value="<%=recette.ingredients%>" placeholder="Saisir les ingrédients.." required="true">
+    
+    
+        <label for="lname" >Description</label>
+            <input type="text" id="description"  name="description" value="<%=recette.description%>"  placeholder="Décrivez la recette.. " required="true">
+    
+        <label>Catégorie</label>
+         <select name="categorie" id="categorie" value="<%=recette.categorie%>" required="true">
+         <option value="apéritif">Apéritif</option>
+         <option value="boissons">Boisson</option>
+         <option value="bases">Bases</option>
+         <option value="desserts">Desserts</option>
+         <option value="plats">Plats</option>
+         <option value="plats">Salades</option>
+    
+        </select>
+    <input type="submit" value="Ajouter recette" >
+       
+      </form>
+
+
+</body>
+
